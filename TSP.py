@@ -34,9 +34,8 @@ while stck:
         stck.append(m1)
         visited.add(m1)
         cost+=m2
-path.append(start)
 cost+=mp[path[-1]][start]
-print(path,cost)
+print(path+[start],cost)
         
         
             
