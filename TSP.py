@@ -15,8 +15,8 @@ for i in range(n):
             mp[inp][x]=int(input("distance "))
         c+=1
     t+=1
-start=input("enter the start city")
-visited=set()
+start=input("enter the start city ")
+visited=set(start)
 stck=[start]
 path=[]
 cost=0
@@ -34,6 +34,7 @@ while stck:
         stck.append(m1)
         visited.add(m1)
         cost+=m2
+path.append(start)
 cost+=mp[path[-1]][start]
 print(path,cost)
         
